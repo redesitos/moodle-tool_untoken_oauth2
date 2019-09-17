@@ -4,9 +4,7 @@ The following plugin allows you to remove emails from linking accounts in moodle
 
 #### Documentation ####
 
-###See the page [Plugin skeleton
-###generator](https://docs.moodle.org/en/admin/tool/pluginskel/index) at moodle
-###docs site.
+In build.
 
 #### Copyright
 
