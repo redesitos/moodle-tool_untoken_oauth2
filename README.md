@@ -8,8 +8,6 @@ supports the solution from the administration of the site for the report of the 
 
 https://tracker.moodle.org/browse/MDL-60827
 
-In build.
-
 #### Copyright ####
 
 Copyright (C) 2019 Jonathan E. López G.
