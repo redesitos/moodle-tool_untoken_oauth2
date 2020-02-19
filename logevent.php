@@ -41,7 +41,7 @@ require_login();
 
 $PAGE->set_context(context_system::instance());
 $PAGE->set_pagelayout('standard');
-$PAGE->set_title('oauth2');
+$PAGE->set_title(get_string('title', 'tool_untoken_oauth2'));
 $PAGE->set_heading(get_string('headeventtag', 'tool_untoken_oauth2'));
 $PAGE->set_url($CFG->wwwroot . '/admin/tool/untoken_oauth2/logevent.php');
 
