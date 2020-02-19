@@ -111,7 +111,7 @@ if (confirm_sesskey() && $confirm && $delete) {
         $row->timecreated = $fecha->getTimestamp();
 
         $transaction = $DB->start_delegated_transaction();
-        $DB->insert_record('untoken_oauth2_log', $row);
+        $DB->insert_record('tool_untoken_oauth2_log', $row);
         $transaction->allow_commit();
     }
 
