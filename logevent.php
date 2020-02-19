@@ -77,7 +77,7 @@ if ($back) {
     );
     $table->colclasses[] = 'centeralign';
     $table->attributes['cellpadding'] = '2';
-    $logs = $DB->get_records('untoken_oauth2_log');
+    $logs = $DB->get_records('tool_untoken_oauth2_log');
     $fecha = new DateTime();
 
     $band = ($page * $perpage);
@@ -111,7 +111,7 @@ if ($back) {
         'dir' => $dir,
         'perpage' => $perpage
     ));
-    $rowcount = $DB->count_records('untoken_oauth2_log');
+    $rowcount = $DB->count_records('tool_untoken_oauth2_log');
     echo '<br><br>';
     if (! empty($table)) {
         echo html_writer::table($table);
