@@ -50,7 +50,7 @@ $string['eventlbmanagertag'] = 'Log de enalce de vinculación';
 $string['managerinfo'] = 'Elija la opción de interés: La búsqueda está destinada a encontrar los enlaces de las cuentas para ser liberados.<br><br>
 El registro de eventos mostrará todas las acciones de un usuario con privilegios sobre los tokens de enlace.';
 $string['title'] = 'liberar oauth2';
-$string['head'] = 'liberar vinculación de token';
+$string['header'] = 'liberar vinculación de token';
 $string['headsearchtag'] = 'Buscar cuentas vinculadas con Oauth2';
 $string['titlesearchtag'] = 'Se han encontrado los siguientes registros:';
 $string['confirmsearchtag'] = 'Está a punto de eliminar todos los enlaces de enlaces existentes para la cuenta de correo electrónico proporcionada, lo que eliminará el enlace con los servicios integrados <br> <br> ¿Desea eliminar el enlace de la cuenta o cuentas vinculadas?';
