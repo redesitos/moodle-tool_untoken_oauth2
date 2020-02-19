@@ -25,7 +25,7 @@
  * Documentation class sform, have items to email search
  */
 
-
+namespace tool_untoken_oauth2{
 
 //moodleform is defined in formslib.php
 require_once($CFG->libdir .'/formslib.php');
@@ -85,6 +85,7 @@ class sform extends moodleform {
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * Documentation class dform, have items to email delete
  */
+
 class dform extends moodleform {
     //Add elements to form
 
@@ -148,4 +149,4 @@ class mform extends moodleform {
         }
 
 }
-
+}

@@ -39,7 +39,7 @@ require_login();
 
 $PAGE->set_context(context_system::instance());
 $PAGE->set_pagelayout('standard');
-$PAGE->set_title('untoken oauth2');
+$PAGE->set_title(get_string('title', 'tool_untoken_oauth2'));
 $PAGE->set_heading(get_string('headprocestag', 'tool_untoken_oauth2'));
 $PAGE->set_url($CFG->wwwroot . '/admin/tool/untoken_oauth2/delete.php');
 
@@ -111,7 +111,7 @@ if (confirm_sesskey() && $confirm && $delete) {
         $row->timecreated = $fecha->getTimestamp();
 
         $transaction = $DB->start_delegated_transaction();
-        $DB->insert_record('untoken_oauth2_log', $row);
+        $DB->insert_record('tool_untoken_oauth2_log', $row);
         $transaction->allow_commit();
     }
 
