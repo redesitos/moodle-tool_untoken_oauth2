@@ -32,7 +32,9 @@ defined('MOODLE_INTERNAL') || die();
 require_once($CFG->libdir .'/formslib.php');
 use moodleform;
 
+
 class tool_untoken_oauth2_sform extends moodleform {
+
 /*
  * Element definitions form search 
  *
