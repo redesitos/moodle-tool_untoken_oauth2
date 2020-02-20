@@ -33,7 +33,7 @@
  *            confirmation string.
  */
 require_once ('../../../config.php');
-require_once ('./class/sform.php');
+require_once ('./class/dform.php');
 
 require_login();
 
@@ -63,7 +63,7 @@ require_capability('tool/untoken_oauth2:action', $context);
 
 $site = get_site();
 
-$mform = new dform();
+$mform = new tool_untoken_oauth2_dform();
 echo $OUTPUT->header();
 if (confirm_sesskey() && $confirm && $delete) {
 

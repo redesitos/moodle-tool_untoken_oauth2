@@ -48,7 +48,7 @@ require_capability('tool/untoken_oauth2:search', $context);
 
 $site = get_site();
 
-$mform = new sform();
+$mform = new tool_untoken_oauth2_sform();
 
 echo $OUTPUT->header();
 if ($mform->get_data()) {

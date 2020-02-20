@@ -24,10 +24,10 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 require_once ('../../../config.php');
-require_once ('./class/sform.php');
+require_once ('./class/mform.php');
 
 require_login();
-
+//namespace tool_untoken_oauth2;
 $PAGE->set_context(context_system::instance());
 $PAGE->set_pagelayout('standard');
 $PAGE->set_title(get_string('title', 'tool_untoken_oauth2'));
@@ -40,7 +40,7 @@ require_capability('moodle/user:delete', $context);
 require_capability('tool/untoken_oauth2:action', $context);
 
 $site = get_site();
-$mform = new mform();
+$mform = new tool_untoken_oauth2_mform();
 echo $OUTPUT->header();
 
 $previewnode = $PAGE->navigation->add(get_string('search'), new moodle_url('searchlink.php'), navigation_node::TYPE_CONTAINER);

@@ -51,7 +51,7 @@ $string['eventlbmanagertag'] = 'Token link log';
 $string['managerinfo'] = 'Choose the option of interest: The Search is intended to find the links of accounts to remove.
 The Event log will show all actions of a user with privileges over link tokens.';
 $string['title'] = 'untoken oauth2';
-$string['head'] = 'release vinculation token';
+$string['header'] = 'release vinculation token';
 $string['headsearchtag'] = 'Search linked account oauth2';
 $string['titlesearchtag'] = 'The following records have been found:';
 $string['confirmsearchtag'] = 'You are about to remove all the existing link links for the email account provided, which will eliminate the link with the previously integrated services<br><br>Do you want to remove the link from the linked account or accounts?';
