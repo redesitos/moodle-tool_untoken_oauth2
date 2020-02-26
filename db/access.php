@@ -31,7 +31,7 @@ defined('MOODLE_INTERNAL') || die();
 $capabilities = array(
 
     'tool/untoken_oauth2:action' => array(
-        'riskbitmask' => RISK_PERSONAL,
+        'riskbitmask' => RISK_PERSONAL, 
         'captype' => 'read','write',
         'contextlevel' => CONTEXT_USER,
         'archetypes' => array(
@@ -40,7 +40,7 @@ $capabilities = array(
     ),
     'tool/untoken_oauth2:search' => array(
         'riskbitmask' => RISK_PERSONAL,
-        'captype' => 'read','write',
+        'captype' => 'read','write', 
         'contextlevel' => CONTEXT_USER,
         'archetypes' => array(
             'manager' => CAP_ALLOW
