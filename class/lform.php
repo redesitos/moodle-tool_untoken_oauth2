@@ -49,7 +49,6 @@ class lform extends moodleform {
     //Add elements to form
 
         public function definition() {
-                global $CFG;
 
                 $mform = $this->_form; // Don't forget the underscore! 
                 $mform->addElement('header', 'general' ,get_string('infologtag','tool_untoken_oauth2'));
