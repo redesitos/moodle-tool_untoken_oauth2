@@ -36,8 +36,6 @@ defined('MOODLE_INTERNAL') || die();
 function xmldb_tool_untoken_oauth2_upgrade($oldversion) {
 //upgrade function
 
-    global $CFG, $DB;
-
     if ($oldversion < 2019091600) {
 //        set_config('version', 2019091602, 'tool_untoken_oauth2');
         upgrade_plugin_savepoint(true, 2019091600, 'tool', 'untoken_oauth2');
