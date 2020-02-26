@@ -23,17 +23,13 @@
  * @copyright 2019 Jonathan López <jonathan.lopez.garcia@gmail.com>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  *         
- * @param bool $delete
- *            delete action.
- * @param bool $back
- *            redirect option.
- * @param email $email
- *            email address.
- * @param text $confirm
- *            confirmation string.
+ * @param bool $delete delete action.
+ * @param bool $back redirect option.
+ * @param email $email email address.
+ * @param text $confirm confirmation string.
  */
-require_once ('../../../config.php');
-require_once ('./class/dform.php');
+require_once('../../../config.php');
+require_once('./class/dform.php');
 
 require_login();
 
