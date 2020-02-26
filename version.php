@@ -34,4 +34,5 @@ $plugin->requires = 2018051700;
 $plugin->component = 'tool_untoken_oauth2'; // Full name of the plugin (used for diagnostics)
 $plugin->maturity = MATURITY_STABLE;
 $plugin->release = 'v1.0.2';
+$plugin->supported = [35, 36, 37, 38];
 
