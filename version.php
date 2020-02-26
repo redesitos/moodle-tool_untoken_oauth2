@@ -8,8 +8,8 @@
 //
 // Moodle is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-// GNU General Public License for more details.
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+// See the GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle. If not, see <http://www.gnu.org/licenses/>.
@@ -24,14 +24,14 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 defined('MOODLE_INTERNAL') || die();
-// Requires this Moodle version
+// Requires this Moodle version.
 if (! isset($plugin)) {
     $plugin = new stdClass();
 }
 
-$plugin->version = 2019091600; // The current module version (Date: YYYYMMDDXX)
+$plugin->version = 2019091600; // The current module version (Date: YYYYMMDDXX).
 $plugin->requires = 2018051700;
-$plugin->component = 'tool_untoken_oauth2'; // Full name of the plugin (used for diagnostics)
+$plugin->component = 'tool_untoken_oauth2'; // Full name of the plugin (used for diagnostics).
 $plugin->maturity = MATURITY_STABLE;
 $plugin->release = 'v1.0.2';
 $plugin->supported = [35, 36, 37, 38];
