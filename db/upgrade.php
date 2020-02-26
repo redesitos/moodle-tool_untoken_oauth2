@@ -8,8 +8,8 @@
 //
 // Moodle is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+// See the GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
@@ -21,10 +21,9 @@
  * @copyright 201i9 Jonathan López <jonathan.lopez.garcia@gmail.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-require_once('upgradelib.php');
-
 defined('MOODLE_INTERNAL') || die();
 
+require_once('upgradelib.php');
 
 /*
  * Upgrade the untoken oauth2 plugin.
@@ -34,23 +33,12 @@ defined('MOODLE_INTERNAL') || die();
  */
 
 function xmldb_tool_untoken_oauth2_upgrade($oldversion) {
-//upgrade function
+// upgrade function.
 
     if ($oldversion < 2019091600) {
-//        set_config('version', 2019091602, 'tool_untoken_oauth2');
         upgrade_plugin_savepoint(true, 2019091600, 'tool', 'untoken_oauth2');
     }
-
-
-    // Automatically generated Moodle v3.3.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.4.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.5.0 release upgrade line.
-    // Put any upgrade step following this.
-
+    
     return true;
 }
 
