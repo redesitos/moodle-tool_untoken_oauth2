@@ -24,6 +24,9 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * Documentation class sform, have items to email search
  */
+
+namespace tool_untoken_oauth2;
+
 defined('MOODLE_INTERNAL') || die();
 
 
@@ -43,7 +46,7 @@ use moodleform;
  */
 
 
-class tool_untoken_oauth2_dform extends moodleform {
+class dform extends moodleform {
     //Add elements to form
 
         public function definition() {

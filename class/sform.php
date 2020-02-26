@@ -25,16 +25,14 @@
  * Documentation class sform, have items to email search
  */
 
-
+namespace tool_untoken_oauth2;
 defined('MOODLE_INTERNAL') || die();
 
 //moodleform is defined in formslib.php
 require_once($CFG->libdir .'/formslib.php');
 use moodleform;
 
-
-class tool_untoken_oauth2_sform extends moodleform {
-
+class sform extends moodleform {
 /*
  * Element definitions form search 
  *

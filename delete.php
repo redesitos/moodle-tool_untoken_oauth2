@@ -63,7 +63,7 @@ require_capability('tool/untoken_oauth2:action', $context);
 
 $site = get_site();
 
-$mform = new tool_untoken_oauth2_dform();
+$mform = new tool_untoken_oauth2\dform;
 echo $OUTPUT->header();
 if (confirm_sesskey() && $confirm && $delete) {
 

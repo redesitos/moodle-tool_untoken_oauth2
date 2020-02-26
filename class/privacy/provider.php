@@ -24,37 +24,37 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * Documentation class sform, have items to email search
  */
-namespace tool_untoken_oauth2;
+
+namespace tool_untoken_oauth2\privacy;
+
 
 defined('MOODLE_INTERNAL') || die();
 
 //moodleform is defined in formslib.php
 require_once($CFG->libdir .'/formslib.php');
-use moodleform;
 
+class provider implements 
+        // This plugin does store personal user data.
+	\core_privacy\local\metadata\provider {
+         // Legacy other moodle versions
+         use \core_privacy\local\legacy_polyfill;
 
-/*
- * Class lform email search
- *
- * This class have form log event elements for tool_untoken_oauth2.
- *
- * @package    tool_untoken_oauth2
- * @copyright  2019 Jonathan López <jonathan.lopez.garcia@gmail.com>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * Documentation class lform, have items to email log actions
- */
+public static function get_metadata(collection $collection) : collection {
 
+    $collection->add_database_table(
+        'tool_untoken_oauth2_log',
+         [
+            'from_username' => 'privacy:metadata:tool_untoken_oauth2_log:from_username',
+            'username' => 'privacy:metadata:tool_untoken_oauth2_log:to_username',
+            'userid' => 'privacy:metadata:tool_untoken_oauth2_log:to_userid',
+            'email' => 'privacy:metadata:tool_untoken_oauth2_log:email',
+            'eventname' => 'privacy:metadata:tool_untoken_oauth2_log:eventname',
+            'timecreated' => 'privacy:metadata:tool_untoken_oauth2_log:timecreated',
 
-class lform extends moodleform {
-    //Add elements to form
+         ],
+        'privacy:metadata:tool_untoken_oauth2_log'
+    );
 
-        public function definition() {
-                global $CFG;
-
-                $mform = $this->_form; // Don't forget the underscore! 
-                $mform->addElement('header', 'general' ,get_string('infologtag','tool_untoken_oauth2'));
-                $mform->addElement('static', 'information', '<h5>'.get_string('information','tool_untoken_oauth2').':</5>',
-                            '<h6><p>'.get_string('descriptionlogtag','tool_untoken_oauth2').':</p></h6>');
-                $mform->addElement('submit', 'back', get_string('continue'));
-        }
+    return $collection;
+}
 }
