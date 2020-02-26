@@ -8,8 +8,8 @@
 //
 // Moodle is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+// See the GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
@@ -30,20 +30,20 @@ namespace tool_untoken_oauth2\privacy;
 
 defined('MOODLE_INTERNAL') || die();
 
-//moodleform is defined in formslib.php
+// moodleform is defined in formslib.php.
+
 require_once($CFG->libdir .'/formslib.php');
 
 class provider implements 
-        // This plugin does store personal user data.
-	\core_privacy\local\metadata\provider {
-         // Legacy other moodle versions
+         \core_privacy\local\metadata\provider {
+         // Legacy other moodle versions.
          use \core_privacy\local\legacy_polyfill;
 
-public static function get_metadata(collection $collection) : collection {
+    public static function get_metadata(collection $collection) : collection {
 
-    $collection->add_database_table(
-        'tool_untoken_oauth2_log',
-         [
+        $collection->add_database_table(
+            'tool_untoken_oauth2_log',
+            [
             'from_username' => 'privacy:metadata:tool_untoken_oauth2_log:from_username',
             'username' => 'privacy:metadata:tool_untoken_oauth2_log:to_username',
             'userid' => 'privacy:metadata:tool_untoken_oauth2_log:to_userid',
@@ -51,10 +51,10 @@ public static function get_metadata(collection $collection) : collection {
             'eventname' => 'privacy:metadata:tool_untoken_oauth2_log:eventname',
             'timecreated' => 'privacy:metadata:tool_untoken_oauth2_log:timecreated',
 
-         ],
-        'privacy:metadata:tool_untoken_oauth2_log'
-    );
+            ],
+            'privacy:metadata:tool_untoken_oauth2_log'
+        );
 
     return $collection;
-}
+    }
 }
