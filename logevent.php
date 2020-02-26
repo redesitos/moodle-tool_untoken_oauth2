@@ -21,21 +21,15 @@
  *
  * @package tool_untoken_oauth2
  * @copyright 2019 Jonathan López <jonathan.lopez.garcia@gmail.com>
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- *         
- * @param bool $back
- *            redirect option.
- * @param char $sort
- *            order option.
- * @param char $dir
- *            direction option.
- * @param int $page
- *            page option.
- * @param int $perpage
- *            perpage option.
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later     
+ * @param bool $back redirect option.
+ * @param char $sort order option.
+ * @param char $dir direction option.
+ * @param int $page page option.
+ * @param int $perpage perpage option.
  */
-require_once ('../../../config.php');
-require_once ('./class/lform.php');
+require_once('../../../config.php');
+require_once('./class/lform.php');
 
 require_login();
 

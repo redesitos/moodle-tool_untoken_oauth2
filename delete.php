@@ -8,8 +8,8 @@
 //
 // Moodle is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-// GNU General Public License for more details.
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+// See the GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle. If not, see <http://www.gnu.org/licenses/>.
@@ -23,17 +23,13 @@
  * @copyright 2019 Jonathan López <jonathan.lopez.garcia@gmail.com>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  *         
- * @param bool $delete
- *            delete action.
- * @param bool $back
- *            redirect option.
- * @param email $email
- *            email address.
- * @param text $confirm
- *            confirmation string.
+ * @param bool $delete delete action.
+ * @param bool $back redirect option.
+ * @param email $email email address.
+ * @param text $confirm confirmation string.
  */
-require_once ('../../../config.php');
-require_once ('./class/dform.php');
+require_once('../../../config.php');
+require_once('./class/dform.php');
 
 require_login();
 

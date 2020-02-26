@@ -8,8 +8,8 @@
 //
 // Moodle is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+// See the GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
@@ -28,7 +28,8 @@
 namespace tool_untoken_oauth2;
 defined('MOODLE_INTERNAL') || die();
 
-//moodleform is defined in formslib.php
+// moodleform is defined in formslib.php.
+
 require_once($CFG->libdir .'/formslib.php');
 use moodleform;
 
@@ -42,36 +43,35 @@ class sform extends moodleform {
  */
 
 	public function definition() {
-        	global $CFG;
 
 	        $mform = $this->_form; // Don't forget the underscore! 
-	        $mform->addElement('header', 'general' , get_string('information','tool_untoken_oauth2'));
-	        $mform->addElement('text', 'email', get_string('emailsearchtag','tool_untoken_oauth2')); // Add elements to your form
-	        $mform->addRule('email', '<strong>'.get_string('reqemailsearchtag','tool_untoken_oauth2').'</strong>', 'email', null, 'client', false, true);
+	        $mform->addElement('header', 'general', get_string('information', 'tool_untoken_oauth2'));
+	        $mform->addElement('text', 'email', get_string('emailsearchtag', 'tool_untoken_oauth2')); // Add elements to your form.
+	        $mform->addRule('email', '<strong>'.get_string('reqemailsearchtag', 'tool_untoken_oauth2').'</strong>', 'email', null, 'client', false, true);
 		$mform->setType('email', PARAM_EMAIL);                   //Set type of element
 	        $mform->setDefault('email', 'exaple@localhost.local');        //Default value
 		
-        	$mform->addElement('submit', 'search', get_string('searchbutton','tool_untoken_oauth2'));
+        	$mform->addElement('submit', 'search', get_string('searchbutton', 'tool_untoken_oauth2'));
 		if ($mform->validate()){
 			$mform->freeze();
 		}
 	}
 	
-/*
- * validation form email 
- *
- * @return bool
- *
- */
+    /*
+    * validation form email 
+    *
+    * @return bool
+    *
+    */
 	
+
 	function validation($data, $files) {
 		$errors = parent::validation($data,$files); 
 		if (empty($data['email'])) {
             		if (array_key_exists('email', $data)) {
                 		$errors['email'] = get_string('required');
             		}
-        	}
-        return $errors;
+		}
+		return $errors;
 	}
-
 }

@@ -8,8 +8,8 @@
 //
 // Moodle is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+// See the GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
@@ -30,7 +30,8 @@ namespace tool_untoken_oauth2;
 defined('MOODLE_INTERNAL') || die();
 
 
-//moodleform is defined in formslib.php
+// moodleform is defined in formslib.php.
+
 require_once($CFG->libdir .'/formslib.php');
 use moodleform;
 
@@ -47,15 +48,13 @@ use moodleform;
 
 
 class dform extends moodleform {
-    //Add elements to form
+    // Add elements to form.
 
         public function definition() {
-                global $CFG;
-
                 $mform = $this->_form; // Don't forget the underscore! 
-                $mform->addElement('header', 'general' ,get_string('infoprocestag','tool_untoken_oauth2'));
-		$mform->addElement('static', 'information', '<h5>'.get_string('information','tool_untoken_oauth2').':</5>',
-			    '<h6><p>'.get_string('descriptionprocestag','tool_untoken_oauth2').'</p></h6>');
+                $mform->addElement('header', 'general' ,get_string('infoprocestag', 'tool_untoken_oauth2'));
+		$mform->addElement('static', 'information', '<h5>'.get_string('information', 'tool_untoken_oauth2').':</5>', 
+				   '<h6><p>'.get_string('descriptionprocestag', 'tool_untoken_oauth2').'</p></h6>');
                 $mform->addElement('submit', 'back', get_string('continue'));
 	}
 }
