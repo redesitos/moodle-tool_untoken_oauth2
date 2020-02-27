@@ -57,7 +57,7 @@ require_capability('tool/untoken_oauth2:action', $context);
 
 $site = get_site();
 
-$mform = new tool_untoken_oauth2_lform();
+$mform = new tool_untoken_oauth2\lform();
 echo $OUTPUT->header();
 if ($back) {
 
