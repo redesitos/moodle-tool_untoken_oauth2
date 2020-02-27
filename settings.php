@@ -32,8 +32,7 @@ if (has_capability('tool/untoken_oauth2:action', context_system::instance())) {
         $ADMIN->add('tools', new admin_externalpage(
             'untoken_oauth2',
             get_string('manager', 'tool_untoken_oauth2'),
-            $CFG->wwwroot.'/'.$CFG->admin.'/tool/untoken_oauth2/manager.php'));
+            $CFG->wwwroot.'/'.$CFG->admin.'/tool/untoken_oauth2/manager.php'
         ));
     }
 }
-
