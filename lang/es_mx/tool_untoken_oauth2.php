@@ -20,54 +20,54 @@
  * This files lists lang strings related to tool_untoken_oauth2.
  *
  * @package tool_untoken_oauth2
- * @copyright 2019 onwards Jonathan LÃ³pez <jonathan.lopez.garcia@gmail.com>
+ * @copyright 2019 onwards Jonathan López <jonathan.lopez.garcia@gmail.com>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-$string['untoken_oauth2:search'] = 'Permiso de bÃºsqueda enlace token';
-$string['untoken_oauth2:action'] = 'Permiso de visualizaciÃ³n enlace tocken';
-$string['pluginname'] = 'DesvinculaciÃ³n de token Oauth2';
-$string['manager'] = 'DesvinculaciÃ³n Token oauth2';
+$string['untoken_oauth2:search'] = 'Permiso de búsqueda enlace token';
+$string['untoken_oauth2:action'] = 'Permiso de visualización enlace tocken';
+$string['pluginname'] = 'Desvinculación de token Oauth2';
+$string['manager'] = 'Desvinculación Token oauth2';
 $string['settings'] = 'Configuraciones generales';
 $string['search'] = 'Buscar enlace por correo electronico';
 $string['logevent'] = 'Ver registro de eventos';
 $string['headeventtag'] = 'Registro de eventos Oauth2';
 $string['infomanagertag'] = 'Acciones disponibles';
-$string['infoprocestag'] = 'Proceso de eliminaciÃ³n';
+$string['infoprocestag'] = 'Proceso de eliminación';
 $string['infologtag'] = 'Log de acciones realizadas';
-$string['information'] = 'InformaciÃ³n';
-$string['descriptionmanagertag'] = 'Seleccione la funciÃ³n que desea utilizar:';
-$string['descriptionsearchtag'] = 'A continuaciÃ³n se muestran todas las acciones realizadas:';
-$string['emailsearchtag'] = 'DirecciÃ³n de correo:';
+$string['information'] = 'Información';
+$string['descriptionmanagertag'] = 'Seleccione la función que desea utilizar:';
+$string['descriptionsearchtag'] = 'A continuación se muestran todas las acciones realizadas:';
+$string['emailsearchtag'] = 'Dirección de correo:';
 $string['deleted'] = 'Eliminado';
-$string['reqemailsearchtag'] = 'DirecciÃ³n de correo requerida';
+$string['reqemailsearchtag'] = 'Dirección de correo requerida';
 $string['searchbutton'] = 'Buscar correo';
 $string['delbutton'] = 'Eliminar enlace';
-$string['descriptionprocestag'] = 'Todos los tokens asociados con la cuenta de correo electrÃ³nico indicada se han eliminado con Ã©xito, ahora puede volver a realizar el proceso de vinculaciÃ³n. <br> <br> Al hacer clic en continuar, se dirigirÃ¡ a la pÃ¡gina de bÃºsqueda de tokens para repetir el proceso.';
+$string['descriptionprocestag'] = 'Todos los tokens asociados con la cuenta de correo electrónico indicada se han eliminado con éxito, ahora puede volver a realizar el proceso de vinculación. <br> <br> Al hacer clic en continuar, se dirigirá a la página de búsqueda de tokens para repetir el proceso.';
 $string['headprocestag'] = 'Eliminar enlace Oauth2';
-$string['descriptionlogtag'] = 'A continuaciÃ³n se muestran todas las acciones realizadas con los enlaces de vinculaciÃ³n';
-$string['searchbmanagertag'] = 'BÃºsqueda de enalce de vinculaciÃ³n';
-$string['eventlbmanagertag'] = 'Log de enalce de vinculaciÃ³n';
-$string['managerinfo'] = 'Elija la opciÃ³n de interÃ©s: La bÃºsqueda estÃ¡ destinada a encontrar los enlaces de las cuentas para ser liberados.<br><br>
-El registro de eventos mostrarÃ¡ todas las acciones de un usuario con privilegios sobre los tokens de enlace.';
+$string['descriptionlogtag'] = 'A continuación se muestran todas las acciones realizadas con los enlaces de vinculación';
+$string['searchbmanagertag'] = 'Búsqueda de enalce de vinculación';
+$string['eventlbmanagertag'] = 'Log de enalce de vinculación';
+$string['managerinfo'] = 'Elija la opción de interés: La búsqueda está destinada a encontrar los enlaces de las cuentas para ser liberados.<br><br>
+El registro de eventos mostrará todas las acciones de un usuario con privilegios sobre los tokens de enlace.';
 $string['title'] = 'liberar oauth2';
-$string['header'] = 'liberar vinculaciÃ³n de token';
+$string['header'] = 'liberar vinculación de token';
 $string['headsearchtag'] = 'Buscar cuentas vinculadas con Oauth2';
 $string['titlesearchtag'] = 'Se han encontrado los siguientes registros:';
-$string['confirmsearchtag'] = 'EstÃ¡ a punto de eliminar todos los enlaces de enlaces existentes para la cuenta de correo electrÃ³nico proporcionada, lo que eliminarÃ¡ el enlace con los servicios integrados <br> <br> Â¿Desea eliminar el enlace de la cuenta o cuentas vinculadas?';
-$string['notsearchtag'] = 'La cuenta indicada no corresponde con la direcciÃ³n de correo electrÃ³nico suministrada.';
-$string['notfoundsearchtag'] = 'No se encontraron registros de enlace para la cuenta de correo electrÃ³nico proporcionada';
-$string['cancelsearchtag'] = 'La operaciÃ³n ha sido cancelada';
+$string['confirmsearchtag'] = 'Está a punto de eliminar todos los enlaces de enlaces existentes para la cuenta de correo electrónico proporcionada, lo que eliminará el enlace con los servicios integrados <br> <br> ¿Desea eliminar el enlace de la cuenta o cuentas vinculadas?';
+$string['notsearchtag'] = 'La cuenta indicada no corresponde con la dirección de correo electrónico suministrada.';
+$string['notfoundsearchtag'] = 'No se encontraron registros de enlace para la cuenta de correo electrónico proporcionada';
+$string['cancelsearchtag'] = 'La operación ha sido cancelada';
 $string['idlog'] = 'Id';
 $string['fromlog'] = 'Desde el username';
 $string['tolog'] = 'Username afectado';
 $string['useridlog'] = 'Id de usuario afectado';
-$string['emaillog'] = 'DirecciÃ³n de correo';
-$string['eventlog'] = 'InfomaciÃ³n';
-$string['timecreatedlog'] = 'Fecha de acciÃ³n';
-$string['privacy:metadata:tool_untoken_oauth2_log'] = 'InformaciÃ³n sobre las vinculaciones eliminadas sobre cuentas de correo, indicando quien ejecuta la acciÃ³n, evento y fecha en la que se realiÃ la acciÃ³n.';
-$string['privacy:metadata:tool_untoken_oauth2_log:from_username'] = 'Usuario que realiza la acciÃ³n.';
+$string['emaillog'] = 'Dirección de correo';
+$string['eventlog'] = 'Infomación';
+$string['timecreatedlog'] = 'Fecha de acción';
+$string['privacy:metadata:tool_untoken_oauth2_log'] = 'Información sobre las vinculaciones eliminadas sobre cuentas de correo, indicando quien ejecuta la acción, evento y fecha en la que se realizó la acción.';
+$string['privacy:metadata:tool_untoken_oauth2_log:from_username'] = 'Usuario que realiza la acción.';
 $string['privacy:metadata:tool_untoken_oauth2_log:to_username'] = 'Usuario afectado.';
 $string['privacy:metadata:tool_untoken_oauth2_log:to_userid'] = 'Id de usuario afectado.';
-$string['privacy:metadata:tool_untoken_oauth2_log:email'] = 'DirecciÃ³n de correo electrÃ³nico del afectado.';
-$string['privacy:metadata:tool_untoken_oauth2_log:eventname'] = 'DescripciÃ³n del evento.';
-$string['privacy:metadata:tool_untoken_oauth2_log:timecreated'] = 'Fecha de creaciÃ³n.';
+$string['privacy:metadata:tool_untoken_oauth2_log:email'] = 'Dirección de correo electrónico del afectado.';
+$string['privacy:metadata:tool_untoken_oauth2_log:eventname'] = 'Descripción del evento.';
+$string['privacy:metadata:tool_untoken_oauth2_log:timecreated'] = 'Fecha de creación.';
