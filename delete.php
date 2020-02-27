@@ -8,7 +8,7 @@
 //
 // Moodle is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 // See the GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
@@ -23,13 +23,17 @@
  * @copyright 2019 Jonathan López <jonathan.lopez.garcia@gmail.com>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  *         
- * @param bool $delete delete action.
- * @param bool $back redirect option.
- * @param email $email email address.
- * @param text $confirm confirmation string.
+ * @param bool $delete
+ *            delete action.
+ * @param bool $back
+ *            redirect option.
+ * @param email $email
+ *            email address.
+ * @param text $confirm
+ *            confirmation string.
  */
-require_once('../../../config.php');
-require_once('./class/dform.php');
+require_once ('../../../config.php');
+require_once ('./class/dform.php');
 
 require_login();
 
@@ -59,7 +63,7 @@ require_capability('tool/untoken_oauth2:action', $context);
 
 $site = get_site();
 
-$mform = new tool_untoken_oauth2\dform;
+$mform = new tool_untoken_oauth2\dform();
 echo $OUTPUT->header();
 if (confirm_sesskey() && $confirm && $delete) {
 

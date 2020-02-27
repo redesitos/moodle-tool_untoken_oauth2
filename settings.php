@@ -8,10 +8,10 @@
 //
 // Moodle is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 // See the GNU General Public License for more details.
 //
-// You should have received a copy of the GNU General Public License along with Moodle. 
+// You should have received a copy of the GNU General Public License along with Moodle.
 // If not, see <http://www.gnu.org/licenses/>.
 
 /**
@@ -29,10 +29,6 @@ if (has_capability('tool/untoken_oauth2:action', context_system::instance())) {
     if (! $ADMIN->locate('tool_untoken_oauth2')) {
         $ADMIN->add('tools', new admin_category('tool_untoken_oauth2', get_string('pluginname', 'tool_untoken_oauth2')));
 
-        $ADMIN->add('tools', new admin_externalpage(
-            'untoken_oauth2',
-            get_string('manager', 'tool_untoken_oauth2'),
-            $CFG->wwwroot.'/'.$CFG->admin.'/tool/untoken_oauth2/manager.php'
-        ));
+        $ADMIN->add('tools', new admin_externalpage('untoken_oauth2', get_string('manager', 'tool_untoken_oauth2'), $CFG->wwwroot . '/' . $CFG->admin . '/tool/untoken_oauth2/manager.php'));
     }
 }

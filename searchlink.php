@@ -28,8 +28,8 @@
  * @param bool $cancelled
  *            cancel action.
  */
-require_once('../../../config.php');
-require_once('./class/sform.php');
+require_once ('../../../config.php');
+require_once ('./class/sform.php');
 
 require_login();
 
@@ -48,7 +48,7 @@ require_capability('tool/untoken_oauth2:search', $context);
 
 $site = get_site();
 
-$mform = new tool_untoken_oauth2\sform;
+$mform = new tool_untoken_oauth2\sform();
 
 echo $OUTPUT->header();
 if ($mform->get_data()) {
