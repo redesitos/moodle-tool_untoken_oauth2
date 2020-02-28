@@ -47,17 +47,19 @@ class mform extends moodleform
 {
 
     // Add elements to form.
-    public function definition()
-    {
+    public function definition(){
         global $CFG;
 
         $mform = $this->_form; // Don't forget the underscore!
         $mform->addElement('header', 'general', get_string('infomanagertag', 'tool_untoken_oauth2'));
-        $mform->addElement('static', 'information', '<h5 id="oauth_info">' . get_string('information', 'tool_untoken_oauth2') . ':</5>',
+        $mform->addElement('static', 
+                           'information', '<h5 id="oauth_info">' . get_string('information', 'tool_untoken_oauth2') . ':</5>',
                            '<h6><p>' . get_string('descriptionmanagertag', 'tool_untoken_oauth2') . '</p></h6>');
-        $mform->addElement('html', '<a  id="oauth_searchlink" href="' . $CFG->wwwroot . '/admin/tool/untoken_oauth2/searchlink.php" 
+        $mform->addElement('html', 
+                           '<a  id="oauth_searchlink" href="' . $CFG->wwwroot . '/admin/tool/untoken_oauth2/searchlink.php" 
                            class="btn btn-primary">' . get_string('searchbmanagertag', 'tool_untoken_oauth2') . '</a>');
-        $mform->addElement('html', '<span></span><a id="oauth_logevent" href="' . $CFG->wwwroot . '/admin/tool/untoken_oauth2/logevent.php" 
+        $mform->addElement('html', 
+                           '<span></span><a id="oauth_logevent" href="' . $CFG->wwwroot . '/admin/tool/untoken_oauth2/logevent.php" 
                            class="btn btn-primary">' . get_string('eventlbmanagertag', 'tool_untoken_oauth2') . '</a>');
     }
 }
