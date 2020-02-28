@@ -34,8 +34,8 @@ require_once ('upgradelib.php');
 function xmldb_tool_untoken_oauth2_upgrade($oldversion)
 {
     // upgrade function.
-    if ($oldversion < 2019091600) {
-        upgrade_plugin_savepoint(true, 2019091600, 'tool', 'untoken_oauth2');
+    if ($oldversion < 2019091601) {
+        upgrade_plugin_savepoint(true, 2019091601, 'tool', 'untoken_oauth2');
     }
 
     return true;
