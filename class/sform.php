@@ -33,8 +33,7 @@ defined('MOODLE_INTERNAL') || die();
 require_once($CFG->libdir . '/formslib.php');
 use moodleform;
 
-class sform extends moodleform
-{
+class sform extends moodleform {
 
     /*
      * Element definitions form search
