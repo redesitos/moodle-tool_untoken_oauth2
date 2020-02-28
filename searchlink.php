@@ -22,14 +22,14 @@
  * @package tool_untoken_oauth2
  * @copyright 2019 Jonathan López <jonathan.lopez.garcia@gmail.com>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- *         
+ * 
  * @param int $delete
  *            delete action.
  * @param bool $cancelled
  *            cancel action.
  */
-require_once ('../../../config.php');
-require_once ('./class/sform.php');
+require_once('../../../config.php');
+require_once('./class/sform.php');
 
 require_login();
 
