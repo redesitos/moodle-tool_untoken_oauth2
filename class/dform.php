@@ -30,7 +30,7 @@ defined('MOODLE_INTERNAL') || die();
 
 // moodleform is defined in formslib.php.
 
-require_once ($CFG->libdir . '/formslib.php');
+require_once($CFG->libdir . '/formslib.php');
 use moodleform;
 
 /*
@@ -43,15 +43,15 @@ use moodleform;
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * Documentation class dform, have items to email delete
  */
-class dform extends moodleform
-{
+class dform extends moodleform {
 
     // Add elements to form.
-    public function definition()
-    {
+    public function definition(){
         $mform = $this->_form; // Don't forget the underscore!
         $mform->addElement('header', 'general', get_string('infoprocestag', 'tool_untoken_oauth2'));
-        $mform->addElement('static', 'information', '<h5>' . get_string('information', 'tool_untoken_oauth2') . ':</5>', '<h6><p>' . get_string('descriptionprocestag', 'tool_untoken_oauth2') . '</p></h6>');
+        $mform->addElement('static', 'information', 
+                           '<h5>' . get_string('information', 'tool_untoken_oauth2') . ':</5>', 
+                           '<h6><p>' . get_string('descriptionprocestag', 'tool_untoken_oauth2') . '</p></h6>');
         $mform->addElement('submit', 'back', get_string('continue'));
     }
 }
