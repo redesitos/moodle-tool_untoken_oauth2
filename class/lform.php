@@ -47,11 +47,11 @@ class lform extends moodleform
 {
 
     // Add elements to form.
-    public function definition()
-    {
+    public function definition(){
         $mform = $this->_form; // Don't forget the underscore!
         $mform->addElement('header', 'general', get_string('infologtag', 'tool_untoken_oauth2'));
-        $mform->addElement('static', 'information', '<h5>' . get_string('information', 'tool_untoken_oauth2') . ':</5>', '<h6><p>' . get_string('descriptionlogtag', 'tool_untoken_oauth2') . ':</p></h6>');
+        $mform->addElement('static', 'information', '<h5>' . get_string('information', 'tool_untoken_oauth2') . ':</5>', 
+                           '<h6><p>' . get_string('descriptionlogtag', 'tool_untoken_oauth2') . ':</p></h6>');
         $mform->addElement('submit', 'back', get_string('continue'));
     }
 }
