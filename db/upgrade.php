@@ -23,7 +23,7 @@
  */
 defined('MOODLE_INTERNAL') || die();
 
-require_once ('upgradelib.php');
+require_once('upgradelib.php');
 
 /*
  * Upgrade the untoken oauth2 plugin.
@@ -31,8 +31,7 @@ require_once ('upgradelib.php');
  * @param int $oldversion The old version of the user tours plugin
  * @return bool
  */
-function xmldb_tool_untoken_oauth2_upgrade($oldversion)
-{
+function xmldb_tool_untoken_oauth2_upgrade($oldversion){
     // upgrade function.
     if ($oldversion < 2019091601) {
         upgrade_plugin_savepoint(true, 2019091601, 'tool', 'untoken_oauth2');
