@@ -1,0 +1,23 @@
+/**
+ * File base.css.
+ * Contains base styles for plugin tool_untoken_oauth2.
+ */
+
+#oauth_info {
+    padding: 10px 0 0;
+    margin-top: .5em;
+    text-align: center;
+}
+
+#oauth_searchlink {
+    margin: 10px 0;
+    width=80%;
+    color="blue";
+    text-align:center;
+}
+
+#oauth_logevent {
+    margin: 10px 0;
+    width=80%
+    text-align:center;
+}
