@@ -27,8 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 if (has_capability('tool/untoken_oauth2:action', context_system::instance())) {
     if (! $ADMIN->locate('tool_untoken_oauth2')) {
-        $ADMIN->add('tools', new admin_category('tool_untoken_oauth2', get_string('pluginname', 'tool_untoken_oauth2')));
+        $ADMIN->add('tools', 
+                    new admin_category('tool_untoken_oauth2', 
+                    get_string('pluginname', 'tool_untoken_oauth2')));
 
-        $ADMIN->add('tools', new admin_externalpage('untoken_oauth2', get_string('manager', 'tool_untoken_oauth2'), $CFG->wwwroot . '/' . $CFG->admin . '/tool/untoken_oauth2/manager.php'));
+        $ADMIN->add('tools', 
+                    new admin_externalpage('untoken_oauth2', get_string('manager', 'tool_untoken_oauth2'), 
+                    $CFG->wwwroot . '/' . $CFG->admin . '/tool/untoken_oauth2/manager.php'));
     }
 }
