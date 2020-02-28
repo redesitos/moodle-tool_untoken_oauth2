@@ -32,8 +32,8 @@
  * @param text $confirm
  *            confirmation string.
  */
-require_once ('../../../config.php');
-require_once ('./class/dform.php');
+require_once('../../../config.php');
+require_once('./class/dform.php');
 
 require_login();
 
