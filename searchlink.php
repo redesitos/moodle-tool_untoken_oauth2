@@ -29,7 +29,6 @@
  *            cancel action.
  */
 require_once('../../../config.php');
-require_once('./class/sform.php');
 
 require_login();
 
