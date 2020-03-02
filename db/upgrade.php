@@ -23,8 +23,6 @@
  */
 defined('MOODLE_INTERNAL') || die();
 
-require_once('upgradelib.php');
-
 /*
  * Upgrade the untoken oauth2 plugin.
  *
