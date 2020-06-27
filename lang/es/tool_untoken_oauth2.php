@@ -65,9 +65,12 @@ $string['emaillog'] = 'Dirección de correo';
 $string['eventlog'] = 'Infomación';
 $string['timecreatedlog'] = 'Fecha de acción';
 $string['privacy:metadata:tool_untoken_oauth2_log'] = 'Información sobre las vinculaciones eliminadas sobre cuentas de correo, indicando quien ejecuta la acción, evento y fecha en la que se realizó la acción.';
+$string['privacy:metadata:tool_untoken_oauth2_log:id'] = 'Identificador de la tabla.';
 $string['privacy:metadata:tool_untoken_oauth2_log:from_username'] = 'Usuario que realiza la acción.';
 $string['privacy:metadata:tool_untoken_oauth2_log:to_username'] = 'Usuario afectado.';
-$string['privacy:metadata:tool_untoken_oauth2_log:to_userid'] = 'Id de usuario afectado.';
+$string['privacy:metadata:tool_untoken_oauth2_log:userid'] = 'Id de usuario afectado.';
 $string['privacy:metadata:tool_untoken_oauth2_log:email'] = 'Dirección de correo electrónico del afectado.';
 $string['privacy:metadata:tool_untoken_oauth2_log:eventname'] = 'Descripción del evento.';
 $string['privacy:metadata:tool_untoken_oauth2_log:timecreated'] = 'Fecha de creación.';
+$string['privacy:metadata:tool_untoken_oauth2:pluginmeta'] = 'Informacion del plugin tool_untoken_oauth2';
+
