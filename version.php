@@ -33,6 +33,6 @@ $plugin->version = 2020062623; // The current module version (Date: YYYYMMDDXX).
 $plugin->requires = 2017051500;
 $plugin->component = 'tool_untoken_oauth2'; // Full name of the plugin (used for diagnostics).
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = 'v1.1';
+$plugin->release = 'v1.2';
 $plugin->supported = [33,39];
 
