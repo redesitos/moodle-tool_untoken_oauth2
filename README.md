@@ -17,9 +17,9 @@ https://docs.moodle.org/all/es/tool_untoken_oauth2
 ## License ##
 
 
-Copyright (C) 2019 Jonathan E. López G.
+Copyright (C) 2019 Innovandoweb.
 
-2019 Jonathan López <jonathan.lopez.garcia@gmail.com>
+2019 Innovandoweb <asesor@innovandoweb.com>
 
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
