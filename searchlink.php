@@ -29,7 +29,7 @@
  *            cancel action.
  */
 require_once('../../../config.php');
-
+defined('MOODLE_INTERNAL') || die();
 require_login();
 
 $PAGE->set_context(context_system::instance());
