@@ -29,10 +29,10 @@ if (! isset($plugin)) {
     $plugin = new stdClass();
 }
 
-$plugin->version = 2021072300; // The current module version (Date: YYYYMMDDXX).
+$plugin->version = 2022070301; // The current module version (Date: YYYYMMDDXX).
 $plugin->requires = 2017051500;
 $plugin->component = 'tool_untoken_oauth2'; // Full name of the plugin (used for diagnostics).
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = 'v1.4';
-$plugin->supported = [33,311];
+$plugin->release = 'v2.0';
+$plugin->supported = [33,40];
 

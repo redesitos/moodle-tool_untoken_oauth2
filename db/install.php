@@ -11,30 +11,27 @@
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 // See the GNU General Public License for more details.
 //
-// You should have received a copy of the GNU General Public License
-// along with Moodle. If not, see <http://www.gnu.org/licenses/>.
+// You should have received a copy of the GNU General Public License along with Moodle.
+// If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Upgrade code for install
+ * Lang strings.
  *
- * @package tool_untoken_oauth2
- * @copyright 201i9 Jonathan López <jonathan.lopez.garcia@gmail.com>
+ * This files lists lang strings related to tool_untoken_oauth2.
+ *
+ * @package enrol_mpcheckoutpro
+ * @copyright 2019 Jonathan López <asesor@innovandoweb.com>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 defined('MOODLE_INTERNAL') || die();
 
-/*
- * Upgrade the untoken oauth2 plugin.
+
+/**
+ * Sets up installation script.
  *
- * @param int $oldversion The old version of the user tours plugin
- * @return bool
+ * @return void
  */
-function xmldb_tool_untoken_oauth2_upgrade($oldversion){
-    // upgrade function.
-    if ($oldversion < 2022070301) {
-        upgrade_plugin_savepoint(true, 2022070301, 'tool', 'untoken_oauth2');
-    }
-
-    return true;
+function xmldb_tool_untoken_oauth2_install()
+{
+    
 }
-
