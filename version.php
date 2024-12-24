@@ -8,8 +8,8 @@
 //
 // Moodle is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-// See the GNU General Public License for more details.
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+// GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle. If not, see <http://www.gnu.org/licenses/>.
@@ -29,10 +29,9 @@ if (! isset($plugin)) {
     $plugin = new stdClass();
 }
 
-$plugin->version = 2022070302; // The current module version (Date: YYYYMMDDXX).
+$plugin->version = 2022070303; // The current module version (Date: YYYYMMDDXX).
 $plugin->requires = 2017051500;
 $plugin->component = 'tool_untoken_oauth2'; // Full name of the plugin (used for diagnostics).
 $plugin->maturity = MATURITY_STABLE;
 $plugin->release = 'v2.0';
-$plugin->supported = [35,400];
-
+$plugin->supported = [35, 400, 401, 402, 403, 404, 405]; // Added support for Moodle 4.5
