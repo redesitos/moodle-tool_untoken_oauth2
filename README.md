@@ -2,7 +2,7 @@
 
 The following plugin allows you to remove emails from linking accounts in moodle with oauth2 services, useful in cases where the linking message was never delivered and the entry is blocked with the user's account, allowing this linking process to be performed again.
 
-## Supported Versions 3.5 3.6 3.7 3.8 3.9 3.10 3.11 4.0 ##
+## Supported Versions 3.5 3.6 3.7 3.8 3.9 3.10 3.11 4.0 4.1 4.2 4.3 4.4 4.5 ##
 
 ## Documentation ##
 
