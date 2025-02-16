@@ -29,9 +29,9 @@ if (! isset($plugin)) {
     $plugin = new stdClass();
 }
 
-$plugin->version = 2025011501; // The current module version (Date: YYYYMMDDXX).
+$plugin->version = 20250123268; // The current module version (Date: YYYYMMDDXX).
 $plugin->requires = 2017051500;
 $plugin->component = 'tool_untoken_oauth2'; // Full name of the plugin (used for diagnostics).
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = 'v3.0';
+$plugin->release = 'v4.0';
 $plugin->supported = [35, 405]; // Added support for Moodle 4.5
